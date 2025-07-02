@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-07-01T00:00:00Z
+publishDate: 2025-07-01T00:00:00Z
 title: Project for Research Platform
 excerpt: Specialized Upgrade Project for Research Platform's Underlying Data Middleware Adaptation to Enhance Search Accuracy.
 image:  '~/assets/images/blog/research/search.png'
@@ -461,7 +461,7 @@ Note:Key Terminology
 | **Temporal Binding** | Event-relative time fencing | Enables longitudinal variable derivation |
 | **Traceability** | Embedded EID/computation IDs | Full audit trail from result → source report |
 
-### Critical Terminology
+Notes：Critical Terminology
 
 | Chinese Term | English Equivalent | Technical Context |
 |--------------|-------------------|-------------------|
