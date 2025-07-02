@@ -18,7 +18,7 @@ tags:
 **Project Background:**
 The project has undergone 5 iterative versions, deployed across multiple hospital sites. However, ongoing maintenance revealed systemic issues:
 
-**I. Core Operational Challenges**
+#### I. Core Operational Challenges
 
 1. **System Performance**
    - Slow search responses
@@ -31,7 +31,7 @@ The project has undergone 5 iterative versions, deployed across multiple hospita
    - Lack of unified design language
    - Excessive redundant content
 
-**II. Product-Market Mismatch**
+#### II. Product-Market Mismatch
 
 1. **Expectation Gap**
    - Strong marketing appeal and user recognition of product concepts
@@ -56,7 +56,7 @@ The project has undergone 5 iterative versions, deployed across multiple hospita
 
 ### Project Analysis
 
-**I. Core Functional Issues**
+#### I. Core Functional Issues
 
 1. **Slow Search Performance**
    - *Example*: Query "Patients diagnosed with congenital heart disease (CHD) from 2015 to present with white blood cell count ≥2" returned 22,345 patients in **1 min 42 sec** on our system.
@@ -86,7 +86,7 @@ The project has undergone 5 iterative versions, deployed across multiple hospita
 
 ---
 
-**II. Architectural Deficiencies**
+#### II. Architectural Deficiencies
 
 1. **Fragmented Product Architecture**
    - *Problem*: Isolated modules (Platform Management / Specialty Disease DB / Infrastructure Settings) with:
@@ -115,23 +115,6 @@ The project has undergone 5 iterative versions, deployed across multiple hospita
 ### Project Plan
 
 **Vision:** *Productize solutions through component-based development to resolve core issues, bridge functional gaps, and establish competitive differentiation.*
-
-```mermaid
-gantt
-    title Implementation Roadmap
-    dateFormat  YYYY-MM-DD
-    section Phase 1: Foundation
-    Business Scope Definition     :2023-10-01, 30d
-    Priority & Scheduling         :2023-11-01, 14d
-    section Phase 2: Development
-    Component Implementation     :2023-11-15, 45d
-    Functional Integration       :2023-12-30, 21d
-    section Phase 3: Deployment
-    Release & Script Dry-run     :2024-01-20, 14d
-    Pilot Deployment             :2024-02-05, 28d
-    User Training                :2024-03-04, 14d
-    Production Monitoring        :2024-03-18, 90d
-```
 
 **Key Deliverables:**
 
@@ -183,21 +166,21 @@ gantt
 |                           | Data Exploration            | Enables in-dataset cleansing (missing value imputation, text filtering, variable binning/merging/derivation), dataset versioning, variable/event management, and statistical analysis (descriptive/differential tests) |
 |                           | Platform Settings           | Configures platform permissions, roles, anonymization, audit logs, external access, organizations, effective dates; controls functional access |
 
----
-
-### Key Terminology Rationale
+Notes: Key Terminology Rationale
 
 | Chinese Term               | English Translation                   | Justification                                                                 |
 |----------------------------|---------------------------------------|-------------------------------------------------------------------------------|
 | 数据脱敏                  | Data Masking                          | Industry-standard privacy protection term                                     |
 | 纳排标准                  | Inclusion/Exclusion Standards         | Clinical research convention                                                  |
-| 变量生产                  | **Variable Generation**               | Consistent with prior system terminology                                      |
+| 变量生产                  | Variable Generation               | Consistent with prior system terminology                                      |
 | 随访                      | Follow-up                             | Medical domain standard                                                       |
 | 多线程搜索                | Multithreaded Search                  | Technical accuracy for parallel processing                                    |
 | 前瞻性/回顾性研究         | Prospective/Retrospective Studies     | Research methodology standards                                               |
 | 数据质控                  | Data Quality Control (QC)             | Maintains consistency across modules                                         |
 | 科研视图                  | Research Perspective View             | Emphasizes clinical research context over literal "scientific view"           |
 | 变量衍生计算              | Derived Variable Calculations         | Precise description of computational logic                                   |
+
+---
 
 ### Simplified Data Cleansing Workflow
 
@@ -276,25 +259,27 @@ FROM clinical_records
 
 ### Specialty Disease Database: Variable Generation & Application Workflow
 
-*(Illustrated using disease-specific variable production logic)*
+>(Illustrated using disease-specific variable production logic)
+
 ![Variable Workflow](../../assets/images/blog/research/variable.png "Variable Workflow")
 ---
 
-#### I. Core Process
+#### 1️⃣ Core Process
 
-**Phase 1: Variable Tree & Definition**
+#### Phase 1: Variable Tree & Definition
 
 1. **Domain Hierarchy Establishment**
    - Define research-specific data domains (e.g., "Patient Demographics", "Lab Results", "Imaging Findings")
    - Implement **domain hierarchy tree** for intuitive navigation (300+ domains across studies)
 
-**Phase 2: Variable Production**
+#### Phase 2: Variable Production
+
 2. **Variable Creation Methods**
 
 - **Template-based variables**: Reuse existing domain templates
 - **Rule-based variables**: Create custom logic for value derivation
 - **Manual-entry variables**: Enable auto-fill with value binding
-- *CRF follow-up special handling*:
+- **CRF follow-up special handling**:
   - Configure tiered attributes (follow-up schedules, mobile push)
   - Embed verification identifiers
 
@@ -307,9 +292,7 @@ FROM clinical_records
    - Streamline optimization cycles
    - Enhance universality and usability
 
----
-
-#### II. Key Innovations
+#### 2️⃣ Key Innovations
 
 1. **Low-Cost Reusability**
    - Unified framework for **form/variable/logic reuse**
@@ -413,7 +396,7 @@ FROM clinical_records
    | Immutable versions | Support group comparisons |
    | Cleansed baselines | Feed reporting pipelines |
 
-### Key Terminology
+Note:Key Terminology
 
 | Chinese Term | English Equivalent | Technical Context |
 |---|---|---|
