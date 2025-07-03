@@ -4,10 +4,10 @@ title: Project for Research Platform
 excerpt: Specialized Upgrade Project for Research Platform's Underlying Data Middleware Adaptation to Enhance Search Accuracy.
 image:  '~/assets/images/blog/research/dashboard.png'
 tags:
-
 - Product
 - Research Platform
-
+# metadata:
+#   canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
 ---
 
 ### Project and Content Description
