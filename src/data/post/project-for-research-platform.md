@@ -2,7 +2,7 @@
 publishDate: 2025-07-01T00:00:00Z
 title: Project for Research Platform
 excerpt: Specialized Upgrade Project for Research Platform's Underlying Data Middleware Adaptation to Enhance Search Accuracy.
-image:  '~/assets/images/blog/research/search.png'
+image:  '~/assets/images/blog/research/dashboard.png'
 tags:
 
 - Product
