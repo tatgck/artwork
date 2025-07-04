@@ -32,55 +32,24 @@ Disparate variable requirements force redundant data provisioning, hindering hos
 c) Research Silos
 Proliferation of single-study models (67% being pilot academic projects) creates operational complexity"*
 
-### Key Innovations
+### Breakthroughs
 
-1. **Proprietary Model Registry**
-   - Unified lifecycle management for diverse models (debugging/configuration/testing)
-   - **Intelligent patient-risk matching:** Automatically deploys highest-risk prediction models based on individual clinical profiles
+1. **Innovative Model Repository Management:** Establishes a unified repository for diverse model types, enabling dedicated model management capabilities including **debugging, administration, configuration, and validation.** Crucially, the system **automatically selects and applies the highest-risk model** based on individual patient profiles for optimal clinical relevance.
+2. **Multi-dimensional Model Visualization:** Effectively presents models across various dimensions. This includes, but is not limited to, **temporal (time-series) and non-temporal models,** visualization of **model parameter evolution history,** and **integrated displays combining model outputs with critical patient information** for comprehensive clinical insight.
+3. **Granular Access Control & Alert Optimization:** Implements **role-based access controls (RBAC) for patient data visibility** combined with **configurable data permissions (e.g., anonymization protocols).** This enables **customizable, tiered alert management,** effectively **mitigating clinical alert fatigue** caused by an overload of low-priority notifications through tailored, risk-based alerting strategies.
 
-2. **Multidimensional Model Visualization**
-   - Integrated display of temporal/non-temporal models with parameter evolution tracking
-   - **Context-aware fusion:** Synchronizes model outputs with live patient vitals and EHR data
-
-3. **Customized Alert Governance**
-   - **Granular RBAC + HIPAA-compliant anonymization**
-   - **Adaptive thresholding:** Dynamically suppresses low-priority alerts to combat clinical fatigue
-
----
-
-### Implementation Framework
+### Implementation Strategy
 
 ![Framework](../../assets/images/blog/2-fream01.png "Simplified Framework")
 
-| Component | Core Functionality |
-|-----------|--------------------|
-| **Data Aggregation Hub** | Real-time streaming + historical patient datasets (HL7/FHIR compliant) |
-| **Model Registry Engine** | Centralized management for:
-
-- Model registration
-- Threshold customization
-- Hyperparameter tuning |
-| **Data Permissions Matrix** |
-- Isolation by: department/ward/disease tags
-- Dynamic RBAC with GDPR anonymization |
+1. **Foundation: Real-time & Historical Patient Data Hub:** Provides a **core platform for collecting and managing standardized, general patient datasets.** This platform **integrates real-time data from current inpatients with comprehensive historical patient records** to form a robust data foundation.
+2. **Centralized Model Repository Framework:** Implements a **comprehensive model registry mechanism.** This supports **model registration, version control, threshold configuration, hyperparameter tuning,** and essential lifecycle management tasks within the unified repository.
+3. **Robust Data Governance & Access Control:** Establishes **granular data permissions and strict data isolation protocols.** Data is **tagged and segmented** based on criteria like **department, ward, and disease type.** This segmentation is **tightly integrated with the RBAC system,** enabling highly **flexible and secure foundational configurations** tailored to organizational structure and needs.
 
 ---
 
-### Strategic Roadmap
+### Future Outlook
 
-| Phase | Evolution Path |
-|-------|----------------|
-| **Data Assetization** | Curated datasets → Monetizable digital assets → Data element exchange |
-| **Model Ecosystem** | Reusable high-fidelity models → Cross-institutional deployment (30% cost reduction) |
-| **Interoperability** | API-driven training services → Multi-center collaborative networks |
-
----
-
-### Term Validation Table
-
-| Chinese Concept | Certified English | Standard Reference |
-|-----------------|-------------------|-------------------|
-| 模型仓库管理 | Model Registry Orchestration | MLflow 2.3 Specification |
-| 预警判读疲劳 | Clinical Alert Fatigue | AAMI/ANSI HE75:2022 |
-| 数据隔离 | HIPAA-grade Data Isolation | 45 CFR §164.312 |
-| 数字要素交易 | Data Element Monetization | EU Data Act Art. 35 |
+1. **Data as Strategic Digital Assets:** High-quality, curated datasets evolve into **valuable organizational digital assets,** paving the way for **systematic digital asset management and potential value exchange mechanisms** within or between trusted entities.
+2. **Model Reusability & Cost Efficiency:** High-performance models trained on these assets become **readily reusable resources.** This enables **cross-organizational deployment and adaptation,** significantly **reducing development costs and accelerating implementation** for similar clinical needs elsewhere.
+3. **API-Driven Open Ecosystem & Collaboration:** The internal model training and management infrastructure will be **exposed via secure, integrated API services.** This openness **facilitates access for external partners and institutions,** fostering **multi-center collaboration, regional health information exchange, and a shared ecosystem for AI-driven healthcare innovation.**
