@@ -2,7 +2,7 @@
 publishDate: 2023-08-06T00:00:00Z
 title: Unified Real-time Critical Care Early Warning Platform (UCC-EWS)
 excerpt: Disease-Specific Multi-Model Real-time Surveillance and Alert Platform.
-image:  '~/assets/images/blog/2-fream01.png'
+image:  '~/assets/images/blog/model/2-model.png'
 tags:
 - Product
 - AI Warning
@@ -40,7 +40,7 @@ Proliferation of single-study models (67% being pilot academic projects) creates
 
 ### Implementation Strategy
 
-![Framework](../../assets/images/blog/2-fream01.png "Simplified Framework")
+![Framework](../../assets/images/blog/model/2-fream01.png "Simplified Framework")
 
 1. **Foundation: Real-time & Historical Patient Data Hub:** Provides a **core platform for collecting and managing standardized, general patient datasets.** This platform **integrates real-time data from current inpatients with comprehensive historical patient records** to form a robust data foundation.
 2. **Centralized Model Repository Framework:** Implements a **comprehensive model registry mechanism.** This supports **model registration, version control, threshold configuration, hyperparameter tuning,** and essential lifecycle management tasks within the unified repository.
@@ -55,6 +55,8 @@ Proliferation of single-study models (67% being pilot academic projects) creates
 ---
 
 ## Product Feature List
+
+![Framework](../../assets/images/blog/model/2-model.png "Model Repository example")
 
 | Level 1            | Level 2               | Function Description (EN)                                                                                                |
 | :----------------- | :-------------------- | :---------------------------------------------------------------------------------------------------------------------- |
