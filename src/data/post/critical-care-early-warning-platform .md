@@ -46,8 +46,6 @@ Proliferation of single-study models (67% being pilot academic projects) creates
 2. **Centralized Model Repository Framework:** Implements a **comprehensive model registry mechanism.** This supports **model registration, version control, threshold configuration, hyperparameter tuning,** and essential lifecycle management tasks within the unified repository.
 3. **Robust Data Governance & Access Control:** Establishes **granular data permissions and strict data isolation protocols.** Data is **tagged and segmented** based on criteria like **department, ward, and disease type.** This segmentation is **tightly integrated with the RBAC system,** enabling highly **flexible and secure foundational configurations** tailored to organizational structure and needs.
 
----
-
 ### Future Outlook
 
 1. **Data as Strategic Digital Assets:** High-quality, curated datasets evolve into **valuable organizational digital assets,** paving the way for **systematic digital asset management and potential value exchange mechanisms** within or between trusted entities.
@@ -55,7 +53,6 @@ Proliferation of single-study models (67% being pilot academic projects) creates
 3. **API-Driven Open Ecosystem & Collaboration:** The internal model training and management infrastructure will be **exposed via secure, integrated API services.** This openness **facilitates access for external partners and institutions,** fostering **multi-center collaboration, regional health information exchange, and a shared ecosystem for AI-driven healthcare innovation.**
 
 ---
-Here's the translated product feature list with concise menu naming (aligned with medical software conventions) and accurate functional descriptions:
 
 ## Product Feature List
 
