@@ -16,7 +16,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- <Fragment slot="announcement"></Fragment> -->
   <Fragment slot="header">
     <Header
       links={[
@@ -144,35 +143,35 @@ const metadata = {
 
   <Content
     id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    title="Elevating Healthcare Digital Transformation"
+    subtitle="Transcending data silos to penetrate mission-critical clinical workflows. Explore my solution portfolio: from clinical nursing management systems to ICU informatics, disease-specific registry platforms to research infrastructure, and AI-powered clinical early-warning systems."
     isReversed
     items={[
       {
         title: 'Description:',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          'Designed and implemented an enterprise-grade research platform for multi-center clinical studies, targeting pharmaceutical researchers and medical institutions. The system integrates proprietary model registry technology and real-time data surveillance capabilities to enable precision medicine research. Key achievements include developing an intuitive interface for multi-dimensional model visualization and implementing Dynamic RBAC with GDPR-compliant anonymization to address clinical alert fatigue.',
       },
       {
         title: 'Role:',
         description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+          'Directed the end-to-end platform development lifecycle:Architected the FHIR/HL7-compliant data aggregation hub unifying real-time and historical patient datasets, Engineered the model registry engine with automated threshold configuration and hyperparameter tuning, Implemented the data permissions matrix supporting department/ward/disease-based isolatio.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
+      src: '~/assets/images/blog/research/dashboard.png',
+      alt: 'Project_for_Research_Platform',
     }}
     callToAction={{
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: '/project-for-research-platform',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        Project 1: <br /><span class="text-2xl">Project for Research Platform </span>
       </h3>
     </Fragment>
 
@@ -190,27 +189,27 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
+          'Developed a clinical AI platform for predicting critical events in ICU patients, including MODS patient prediction, AKI probability/severity grading (Mild/Moderate/Severe), and sepsis onset probability within 3 hours. The system integrates time-series models and non-time-series models trained on patient historical records, with outputs highlighting risk factor contributions. Designed to enable validated stable releases and rollback to historical versions for clinical safety.',
       },
       {
         title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
+        description: `Product owner.Led end-to-end development of the predictive analytics engine:Architected model framework for ICU patient prediction using sample size optimization techniques;mplemented rollback protocols to ensure model version control in clinical environments,Collaborated with clinicians to validate outputs against real-world ICU data streams.`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Art and Music Poster Image',
+      src: '~/assets/images/blog/model/2-model.png',
+      alt: 'AI model management',
     }}
     callToAction={{
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: 'critical-care-early-warning-platform',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
+        Project 2: <br /><span class="text-2xl">AI Critical Event Prediction Platform</span>
       </h3>
     </Fragment>
 
@@ -220,41 +219,6 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
-      },
-      {
-        title: 'Role:',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
-      },
-    ]}
-    image={{
-      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Fashion e-commerce Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Testimonials Widget *********** -->
 
@@ -267,7 +231,7 @@ const metadata = {
         name: 'Nursing Management System',
         job: 'Hospital Nursing Dept',
         image: {
-          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Nursing Management System',
         },
       },
@@ -277,7 +241,7 @@ const metadata = {
         name: 'ICU Critical Care CIS',
         job: 'for ICU CIS',
         image: {
-          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
+          src: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Critical Care CIS (Clinical Information System)',
         },
       },
@@ -286,7 +250,7 @@ const metadata = {
         name: 'Research Management Platform',
         job: 'Hospital Research Department',
         image: {
-          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Research Management Platform',
         },
       },
@@ -295,7 +259,7 @@ const metadata = {
         name: 'Biobank Management System',
         job: 'CRF、MDM、research',
         image: {
-          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          src: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Biobank Management System Image',
         },
       },
@@ -304,7 +268,7 @@ const metadata = {
         name: 'Critical Event Prediction Platform',
         job: 'Multi-model warehouse (XGBoost/LSTM)',
         image: {
-          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+          src: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Critical Event Prediction Platform Image',
         },
       },
@@ -313,8 +277,8 @@ const metadata = {
         name: ' ICU Device Integration Platform',
         job: 'Device data',
         image: {
-          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Michael Carter Image',
+          src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          alt: 'ICU监护系统界面',
         },
       },
     ]}
