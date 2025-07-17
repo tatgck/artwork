@@ -100,19 +100,17 @@ export const headerData = {
 };
 
 export const footerData = {
-  // links: [
-  //   {
-  //     title: 'Product',
-  //     links: [
-  //       { text: 'Features', href: '#' },
-  //       { text: 'Security', href: '#' },
-  //       { text: 'Team', href: '#' },
-  //       { text: 'Enterprise', href: '#' },
-  //       { text: 'Customer stories', href: '#' },
-  //       { text: 'Pricing', href: '#' },
-  //       { text: 'Resources', href: '#' },
-  //     ],
-  //   },
+  links: [
+    {
+      title: 'Navigation',
+      links: [
+        { text: 'Home', href: '/' },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Contact', href: getPermalink('/contact') },
+      ],
+    },
+  ],
   //   {
   //     title: 'Platform',
   //     links: [
