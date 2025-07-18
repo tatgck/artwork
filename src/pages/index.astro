@@ -28,8 +28,8 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Contact me',
-          href: '#',
+          text: 'Blog',
+          href: getPermalink('/blog'),
         },
       ]}
       isSticky
@@ -166,7 +166,7 @@ const metadata = {
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: '/project-for-research-platform',
+      href: getPermalink('project-for-research-platform', 'product'),
     }}
   >
     <Fragment slot="content">
@@ -204,7 +204,7 @@ const metadata = {
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: 'critical-care-early-warning-platform',
+      href: getPermalink('critical-care-early-warning-platform', 'product'),
     }}
   >
     <Fragment slot="content">
