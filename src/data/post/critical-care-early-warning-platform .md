@@ -8,7 +8,7 @@ tags:
 - AI Warning
 - Model Management
 metadata:
-  canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+  canonical: https://tatgck.github.io/artwork/critical-care-early-warning-platform
 ---
 
 ## Target

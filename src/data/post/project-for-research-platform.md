@@ -6,8 +6,8 @@ image:  '~/assets/images/blog/research/dashboard.png'
 tags:
 - Product
 - Research Platform
-# metadata:
-#   canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+metadata:
+  canonical: https://tatgck.github.io/artwork/project-for-research-platform
 ---
 
 ### Project and Content Description
